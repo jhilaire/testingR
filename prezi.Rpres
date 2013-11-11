@@ -1,0 +1,41 @@
+SSP Energy
+========================================================
+author: Jerome Hilaire
+date: 12 November 2013
+
+
+First Slide
+========================================================
+
+For more details on authoring R presentations click the
+**Help** button on the toolbar.
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+
+$$f(x) = \frac{sin(x)^2}{x}$$
+
+
+Slide With Code
+========================================================
+
+```{r}
+summary(cars)
+```
+
+Slide With Plot
+========================================================
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+
+Slide With ggplot2
+========================================================
+```{r md-cars-scatter, message=FALSE, fig.width=5, fig.height=3}
+library(ggplot2)
+qplot(hp, mpg, data=mtcars)+geom_smooth() 
+```
